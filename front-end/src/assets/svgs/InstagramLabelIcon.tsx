@@ -1,10 +1,12 @@
 import React from 'react'
 
-export const InstagramLabelIcon = () => {
+const InstagramLabelIcon = ({
+  className = ''
+}) => {
   return (
 <svg
   aria-label="Instagram"
-  className="_ab6-"
+  className={` _ab6- ${className}`}
   color="rgb(245, 245, 245)"
   fill="rgb(245, 245, 245)"
   height={29}
@@ -20,3 +22,5 @@ export const InstagramLabelIcon = () => {
   />
 </svg>  )
 }
+
+export default InstagramLabelIcon
